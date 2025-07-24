@@ -1,0 +1,31 @@
+<div class="highlights flex gap-40">
+    <div class="w-mc first">
+        <img class="round-20" src="assets/images/ecourse-template-beginner-friendly-img.jpg" alt="">
+    </div>
+    
+    <div class="second flex flex-column gap-25 p-10 just-c">
+        <h1 class="w-mc" style="font-size: 2.5rem;">Beginner Friendly</h1>
+
+        <p class="text">Auctor pretium, sit vulputate diam egestas mauris, urna scelerisque dignissim volutpat purus velit lacus, vitae volutpat lacus amet quisque integer in urna adipiscing diam tincidunt enim vestibulum maecenas laoreet aliquam sed porttitor.</p>
+
+        <button class="flex align-c" style="gap:15px;">
+            Get started<i data-lucide="arrow-right" stroke="gray" transform="scale(0.8)"></i>
+        </button>
+    </div>
+</div>
+
+<div class="w-mc m-auto text-c" style="line-height: 1.8rem; font-size: 1.1rem;">
+    <h1 class="m-20 p-10" style="font-size: 2.5rem;" >Become Pro in 30 Days</h1>
+    <p style="color: rgb(69, 69, 69);">Tellus nulla lectus faucibus vitae, non sem sollicitudin nunc ipsum volutpat dolor <br> nec facilisis pulvinar mus ut egestas ultrices amet, ridiculus senectus at.</p>
+
+    <div class="flex just-c w-100 gap-40" style="margin-top: 70px;">
+        <div class="flex flex-column m-10 p-10 gap-10" style="width: 350px;" *ngFor="let item of highlights">
+            
+            <h3 style="font-size: 1.5rem;"> {{ item.title }} </h3>
+            <p class="text"> {{ item.text }} </p>
+        </div>
+    </div>
+
+    <hr style="width: 130%; transform: translateX(-12.5%); margin: 20px auto; border: solid 0.2px rgba(76, 74, 74, 0.237);">
+
+</div>
