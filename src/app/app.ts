@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { LessonCard } from './components/lesson-card/lesson-card';
-// import { RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
+import { Navbar } from './components/navbar/navbar';
 
+import { LessonCard } from './components/lesson-card/lesson-card';
 @Component({
   selector: 'app-root',
-  imports: [LessonCard],
+  imports: [RouterOutlet, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
