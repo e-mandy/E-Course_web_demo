@@ -1,29 +1,30 @@
-<div class="rounded-[15px] min-w-[400px] max-w-[500px] m-2 relative">
-    <div class="relative z-10">
-        <img class="rounded-[15px] h-70 w-full" src="{{ image }}" alt="">
-        <div class="p-4 absolute rounded-full shadow-[0_4px_35px_rgba(0,0,0,0.25)] cursor-pointer shadow-amber-200 bg-[#FCD75F] bottom-[-10px] right-10 w-1/12">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3">
-            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-            </svg>
+<div class="grid my-8 grid-cols-2 grid-rows-3 mx-auto place-items-center">
+    <div *ngFor="let lesson of lessonCards" class="hover:shadow-2xl hover:shadow-black/30 rounded-[15px] min-w-[400px] max-w-[580px] my-5 relative">
+            <div class="relative z-10">
+            <img class="rounded-[15px] h-100 w-full" src="{{ lesson.imageUrl }}" alt="">
+            <a href="#" class="p-4 absolute rounded-full shadow-[0_4px_35px_rgba(0,0,0,0.25)] cursor-pointer shadow-amber-200 bg-[#FCD75F] bottom-[-10px] right-10 w-1/12">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+            </a>
         </div>
-    </div>
-    <div class="rounded-b-[15px] relative mt-[-20px] p-5 pt-7 border-[1px] border-solid border-black/20">
-        <h2 class="relative text-3xl mb-1 font-semibold">{{ title }}</h2>
-        <div class="flex relative m-2 ml-[-10px]">
-            <div class="flex gap-2 px-2 items-center">
-                <img class=" w-[15px] h-[15px] " src="assets/icons/icons8-jouer-64.png" alt="">
-                <span class="text-sm text-slate-600">{{ lesson_nb }} lessons</span>
+        <div class="rounded-b-[15px] relative mt-[-20px] p-8 pt-10 border-[1px] border-solid border-black/10">
+            <h2 class="relative text-[33px] mb-1 font-bold">{{ lesson.title }}</h2>
+            <div class="flex relative my-5 ml-[-10px]">
+                <div class="flex gap-2 px-2 items-center">
+                    <img class=" w-[15px] h-[15px] " src="assets/icons/icons8-jouer-64.png" alt="">
+                    <span class="text-sm text-slate-600">{{ lesson.lesson_nb }} lessons</span>
+                </div>
+                <div class="flex relative gap-2 px-2 items-center border-l-[1px] border-l-solid border-l-black/20 ">
+                    <img class=" w-[20px] h-[20px] " src="assets/icons/icons8-sablier-25.png" alt="">
+                    <span class="text-sm text-slate-600">{{ lesson.hours_lesson }} hours</span>
+                </div>
+                <div class="flex relative gap-2 px-2 items-center border-l-[1px] border-l-solid border-l-black/20 ">
+                    <img class=" w-[20px] h-[20px] " src="assets/icons/icons8-liste-de-vérification-24.png" alt="">
+                    <span class="text-sm text-slate-600">{{ lesson.task_lesson }} tasks</span>
+                </div>
             </div>
-            <div class="flex relative gap-2 px-2 items-center border-l-[1px] border-l-solid border-l-black/20 ">
-                <img class=" w-[20px] h-[20px] " src="assets/icons/icons8-sablier-25.png" alt="">
-                <span class="text-sm text-slate-600">{{ hours_lesson }} hours</span>
-            </div>
-            <div class="flex relative gap-2 px-2 items-center border-l-[1px] border-l-solid border-l-black/20 ">
-                <img class=" w-[20px] h-[20px] " src="assets/icons/icons8-liste-de-vérification-24.png" alt="">
-                <span class="text-sm text-slate-600">{{ task_lesson }} tasks</span>
-            </div>
+            <p class="text-[16px] text-black/50 font-[400] relative mb-5"> {{ lesson.description }} </p>
         </div>
-        <p class="text-[15px] text-slate-600 relative mb-5"> {{ description }} </p>
     </div>
 </div>
-

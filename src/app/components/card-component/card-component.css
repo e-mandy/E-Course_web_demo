@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
+
+.info svg {
+  width: 12px;
+  height: 12px;
+}
+
+.info svg path {
+  fill: #fcd75f;
+}
+
+.card {
+  width: 540px;
+  height: 670px;
+  border-radius: 15px;
+  border: 1px solid #dfe0e2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-infos {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+button {
+  position: absolute;
+  border-radius: 22px;
+  background-color: #fcd75f;
+  padding: 20px, 22px;
+  right: 30px;
+  transform: translateY(50px);
+  bottom: 45%;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 10px rgba(252, 215, 95, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgba(252, 215, 95, 1);
+}
+
+.infos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infos > .info {
+  margin-right: 12px;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.description {
+  font-size: 16px;
+  color: #7a7a7a;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 60%;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+h2 {
+  font-family: "Lexend", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 100%; /* Prend toute la largeur disponible dans la grille */
+    height: auto; /* Hauteur automatique */
+  }
+
+  .card-infos {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .infos > .info {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+
+  button {
+    right: 20px;
+    bottom: 20px; /* Ajuster la position du bouton */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-infos {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .infos > .info {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    min-height: 320px;
+  }
+  .card-infos {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .infos > .info {
+    font-size: 10px;
+    margin-right: 3px;
+  }
+  button {
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    bottom: 10px;
+    transform: none;
+  }
+}
