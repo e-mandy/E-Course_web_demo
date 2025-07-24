@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+
+.container{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("/images/imgi_33_ecourse-template-courses-sample-video-img-bg.jpg");
+  height: 600px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.placeholder{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 500px;
+}
+
+.placeholder .title{
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #DFE0E2;
+  margin-bottom: 30px;
+}
+
+.description{
+  font-size: 16px;
+  color: #DFE0E2;
+  font-family: 'Inter', sans-serif;
+  width: 80%;
+}
+
+.placeholder button{
+  background-color: white;
+  border: none;
+  width: 155px;
+  height: 45px;
+  border-radius: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.placeholder button:hover{
+  background-color: #fcd75f;
+}
+
+span{
+  font-size: 16px;
+  border: 1px solid #fcd75f;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span svg path{
+  fill: #fcd75f;
+}
+
+span > svg {
+  width: 30px;
+  height: 30px;
+}
+
+span:hover{
+  cursor: pointer;
+}

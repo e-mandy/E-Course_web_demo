@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+
+.info svg {
+  width: 12px;
+  height: 12px;
+}
+
+.info svg path {
+  fill: #fcd75f;
+}
+
+.card{
+  width: 540px;
+  height: 670;
+  border-radius: 15px;
+  border: 1px solid #DFE0E2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-infos{
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+button{
+  position: absolute;
+  border-radius: 22px;
+  background-color: #fcd75f;
+  padding: 20px, 22px;
+  right: 30px;
+  bottom: 37%;
+  border: 0;
+  width: 50px; 
+  height: 50px;
+  box-shadow: 0 0 10px rgba(252, 215, 95, 0.7); /* Ombre lumineuse */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgba(252, 215, 95, 1); /* Ombre plus intense au survol */
+}
+
+.infos{
+  display: flex;
+}
+
+.infos > .info{
+  margin-right: 12px;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.description{
+  font-size: 16px;
+  color: #7a7a7a;
+  font-family: 'Inter', sans-serif;
+}
+
+img{
+  width: 100%;
+  height: 60%;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+h2{
+  font-family: 'Lexend', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+
