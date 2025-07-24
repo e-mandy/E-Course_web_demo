@@ -2,12 +2,15 @@
 :root{
     --bg-footer: #131416;
     --bg-learn: #FCD75F;
+    --color-text:#7A7A7A;
+    --bg-reviews:#FDFAED;
 }
 body{
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   font-family: Roboto, sans-serif;
+  transition: all ease 0.5s;
 }
 *{
   margin: 0;
@@ -24,8 +27,14 @@ a{
 .w-mc{
     width:max-content;
 }
+.m-auto{
+    margin: auto;
+}
 li{
     list-style-type: none;
+}
+.text-c{
+    text-align: center;
 }
 .flex{
     display: flex;
@@ -47,6 +56,17 @@ li{
 }
 .m-10{
     margin: 10px;
+}
+.m-20{
+    margin: 20px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.text-lay{
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+    color: rgba(35, 34, 34, 0.822);
 }
 .p-10{
     padding: 10px;

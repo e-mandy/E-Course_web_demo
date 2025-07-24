@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Highlights } from './highlights';
+import { CallToAction } from './call-to-action';
 
-describe('Highlights', () => {
-  let component: Highlights;
-  let fixture: ComponentFixture<Highlights>;
+describe('CallToAction', () => {
+  let component: CallToAction;
+  let fixture: ComponentFixture<CallToAction>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Highlights]
+      imports: [CallToAction]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Highlights);
+    fixture = TestBed.createComponent(CallToAction);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -21,4 +21,3 @@ describe('Highlights', () => {
     expect(component).toBeTruthy();
   });
 });
-
