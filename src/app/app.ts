@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Footer } from './component/footer/footer';
-
+import { createIcons, icons} from 'lucide';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -9,6 +9,11 @@ import { Footer } from './component/footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+
 export class App {
   protected title = 'e-course_web_demo';
+
+  ngAfterViewInit(){
+    createIcons({icons});
+  }
 }
