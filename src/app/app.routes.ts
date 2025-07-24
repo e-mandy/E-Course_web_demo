@@ -26,9 +26,3 @@ export const routes: Routes = [
     component: ContactComponent
   }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
