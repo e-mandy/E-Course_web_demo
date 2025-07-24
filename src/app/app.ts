@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { LessonCard } from './components/lesson-card/lesson-card';
 // import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  // imports: [RouterOutlet],
+  imports: [LessonCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
