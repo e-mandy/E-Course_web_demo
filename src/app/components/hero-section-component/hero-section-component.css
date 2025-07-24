@@ -1,36 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-button{
-  font-family: 'Inter', sans-serif;
+button {
+  font-family: "Inter", sans-serif;
 }
 
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
   padding: 0;
 }
 
-h1{
-  font-family: 'Lexend', sans-serif;
-  font-size: 70px ;
+h1 {
+  font-family: "Lexend", sans-serif;
+  font-size: 70px;
   line-height: 100px;
-  color: #131407
+  color: #131407;
 }
 
-p{
+p {
   font-size: 22px;
   line-height: 26px;
   color: #7a7a7a;
   margin-top: 10px;
-
 }
 
-.hero-container{
+.hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,22 +38,21 @@ p{
   min-height: 100vh;
 }
 
-.hero-content{
+.hero-content {
   display: flex;
   flex-direction: column;
   width: 60%;
 }
 
-.intro{
+.intro {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.left{
+.left {
   width: 40%;
 }
 
-.right{
+.right {
   width: 60%;
   margin-left: 70px;
 }
@@ -64,7 +62,7 @@ p{
   height: auto;
 }
 
-.hero-button{
+.hero-button {
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -72,21 +70,18 @@ p{
   height: 45px;
   width: 200px;
   background-color: #131407;
-  color: white; 
+  color: white;
   border: 1px solid #131407;
   border-radius: 50px;
-  margin-top: 50px; 
+  margin-top: 50px;
   align-self: flex-start;
 }
 
-.hero-button:hover{
+.hero-button:hover {
   color: #131407;
   background-color: transparent;
 }
 
-/* Media Queries */
-
-/* Pour les écrans plus petits que 1024px (tablettes) */
 @media (max-width: 1024px) {
   .hero-content {
     width: 80%;
@@ -102,7 +97,8 @@ p{
     line-height: 22px;
   }
 
-  .left, .right {
+  .left,
+  .right {
     min-width: unset; /* Annule le min-width si défini */
   }
 
@@ -111,7 +107,6 @@ p{
   }
 }
 
-/* Pour les écrans plus petits que 768px (tablettes et mobiles) */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column; /* Empiler les éléments */
@@ -122,7 +117,8 @@ p{
     flex-direction: column; /* Empiler les éléments */
   }
 
-  .left, .right {
+  .left,
+  .right {
     width: 100%; /* Occuper toute la largeur */
     margin-left: 0;
     text-align: center; /* Centrer le texte */
@@ -148,7 +144,6 @@ p{
   }
 }
 
-/* Pour les écrans très petits (mobiles) */
 @media (max-width: 480px) {
   h1 {
     font-size: 35px;

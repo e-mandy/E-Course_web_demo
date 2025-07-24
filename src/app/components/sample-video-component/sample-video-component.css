@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
 
-.container{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("/images/imgi_33_ecourse-template-courses-sample-video-img-bg.jpg");
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("/images/imgi_33_ecourse-template-courses-sample-video-img-bg.jpg");
   height: 600px;
   width: 100%;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover; /* Assure que l'image couvre tout le conteneur */
-  background-position: center; /* Centre l'image */
-  padding: 1rem; /* Ajout d'un padding pour les petits écrans */
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
 }
 
-.wrapper{
+.wrapper {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -21,44 +22,44 @@
   justify-content: space-between;
 }
 
-.placeholder{
+.placeholder {
   display: flex;
   flex-direction: column;
   color: white;
   max-width: 500px;
 }
 
-.placeholder .title{
-  font-family: 'Lexend', sans-serif;
+.placeholder .title {
+  font-family: "Lexend", sans-serif;
   font-weight: 600;
   font-size: 40px;
-  color: #DFE0E2;
+  color: #dfe0e2;
   margin-bottom: 30px;
 }
 
-.description{
+.description {
   font-size: 16px;
-  color: #DFE0E2;
-  font-family: 'Inter', sans-serif;
+  color: #dfe0e2;
+  font-family: "Inter", sans-serif;
   width: 80%;
 }
 
-.placeholder button{
+.placeholder button {
   background-color: white;
   border: none;
   width: 155px;
   height: 45px;
   border-radius: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   margin-top: 30px;
 }
 
-.placeholder button:hover{
+.placeholder button:hover {
   background-color: #fcd75f;
 }
 
-span{
+span {
   font-size: 16px;
   border: 1px solid #fcd75f;
   height: 80px;
@@ -69,7 +70,7 @@ span{
   align-items: center;
 }
 
-span svg path{
+span svg path {
   fill: #fcd75f;
 }
 
@@ -78,13 +79,10 @@ span > svg {
   height: 30px;
 }
 
-span:hover{
+span:hover {
   cursor: pointer;
 }
 
-/* Media Queries */
-
-/* Pour les écrans plus petits que 1024px (tablettes) */
 @media (max-width: 1024px) {
   .container {
     height: 500px;
@@ -122,7 +120,6 @@ span:hover{
   }
 }
 
-/* Pour les écrans plus petits que 768px (mobiles) */
 @media (max-width: 768px) {
   .container {
     height: 400px;
@@ -163,7 +160,6 @@ span:hover{
   }
 }
 
-/* Pour les écrans très petits (mobiles) */
 @media (max-width: 480px) {
   .container {
     height: 300px;

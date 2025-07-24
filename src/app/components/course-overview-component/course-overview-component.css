@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
 
 .courses {
   display: grid;
@@ -7,51 +7,48 @@
   width: 60%;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 150px;
   margin-bottom: 50px;
-  padding: 1rem; /* Ajout d'un padding pour les petits écrans */
+  padding: 1rem;
 }
 
-.section-head{
+.section-head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 1rem; /* Ajout d'un padding horizontal */
+  padding: 0 1rem;
 }
 
-.section-title{
-  font-family: 'Lexend', sans-serif;
+.section-title {
+  font-family: "Lexend", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   color: #131416;
 }
 
-h2{
-  font-family: 'Lexend', sans-serif;
+h2 {
+  font-family: "Lexend", sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 52px;
 }
 
-.description{
+.description {
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #7a7a7a;
   max-width: 590px;
   margin-bottom: 70px;
 }
 
-/* Media Queries */
-
-/* Pour les écrans plus petits que 1024px (tablettes) */
 @media (max-width: 1024px) {
   .courses {
     width: 80%;
@@ -74,7 +71,6 @@ h2{
   }
 }
 
-/* Pour les écrans plus petits que 768px (mobiles) */
 @media (max-width: 768px) {
   .courses {
     grid-template-columns: 1fr; /* Une seule colonne */
@@ -97,7 +93,6 @@ h2{
   }
 }
 
-/* Pour les écrans très petits (mobiles) */
 @media (max-width: 480px) {
   .container {
     margin-top: 60px;

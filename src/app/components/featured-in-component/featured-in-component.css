@@ -1,31 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
 
-.text{
+.text {
   font-weight: bold;
   word-spacing: 5px;
   font-size: 14px;
-  font-family: 'Lexend', sans-serif;
+  font-family: "Lexend", sans-serif;
   margin-bottom: 15px;
-  text-align: center; /* Centrer le texte */
 }
 
-.logos{
+.logos {
   display: flex;
-  flex-wrap: wrap; /* Permet aux logos de passer à la ligne */
-  justify-content: center; /* Centrer les logos */
-  gap: 15px; /* Espacement entre les logos */
-  padding: 1rem; /* Ajout d'un padding pour les petits écrans */
+  justify-content: center;
+  gap: 15px;
+  padding: 1rem;
 }
 
 .logos > img {
-  margin-right: 0; /* Supprimer la marge fixe */
-  max-width: 100px; /* Limiter la taille des logos */
+  margin-right: 0;
+  max-width: 100px;
   height: auto;
 }
 
-/* Media Queries */
-
-/* Pour les écrans plus petits que 768px (tablettes et mobiles) */
 @media (max-width: 768px) {
   .text {
     font-size: 12px;
@@ -36,15 +31,14 @@
   }
 }
 
-/* Pour les écrans très petits (mobiles) */
 @media (max-width: 480px) {
   .text {
     font-size: 10px;
   }
 
   .logos {
-    flex-direction: column; /* Empiler les logos */
-    align-items: center; /* Centrer les logos empilés */
+    flex-direction: column;
+    align-items: center;
   }
 
   .logos > img {
