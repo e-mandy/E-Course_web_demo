@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './components/home-component/home-component';
+import { Navbar } from './components/navbar/navbar';
+import { LessonCard } from './components/lesson-card/lesson-card';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent],
+  imports: [Navbar, LessonCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
