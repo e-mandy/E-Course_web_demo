@@ -8,5 +8,5 @@ import { Adress } from '../../interfaces/adress';
   styleUrl: './adress-component.css'
 })
 export class AdressComponent {
-  @Input() adress?: Adress
+  @Input() adress!: Adress
 }

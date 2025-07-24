@@ -1,11 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Adress } from '../../interfaces/adress';
+import { AdressComponent } from '../adress-component/adress-component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact-component',
-  imports: [],
+  imports: [AdressComponent, CommonModule],
   templateUrl: './contact-component.html',
-  styleUrl: './contact-component.css'
+  styleUrls: ['./contact-component.css']
 })
 export class ContactComponent {
   adresses: Adress[] = [
