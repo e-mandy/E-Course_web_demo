@@ -14,6 +14,7 @@
   align-items: center;
   margin-top: 150px;
   margin-bottom: 50px;
+  padding: 1rem; /* Ajout d'un padding pour les petits écrans */
 }
 
 .section-head{
@@ -22,6 +23,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 1rem; /* Ajout d'un padding horizontal */
 }
 
 .section-title{
@@ -45,4 +47,69 @@ h2{
   color: #7a7a7a;
   max-width: 590px;
   margin-bottom: 70px;
+}
+
+/* Media Queries */
+
+/* Pour les écrans plus petits que 1024px (tablettes) */
+@media (max-width: 1024px) {
+  .courses {
+    width: 80%;
+    gap: 15px;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .description {
+    font-size: 14px;
+    max-width: 450px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Pour les écrans plus petits que 768px (mobiles) */
+@media (max-width: 768px) {
+  .courses {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    width: 90%;
+  }
+
+  .container {
+    margin-top: 80px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .description {
+    font-size: 13px;
+    max-width: 90%;
+    margin-bottom: 40px;
+  }
+}
+
+/* Pour les écrans très petits (mobiles) */
+@media (max-width: 480px) {
+  .container {
+    margin-top: 60px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .description {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
 }

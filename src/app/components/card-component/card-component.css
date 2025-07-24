@@ -11,7 +11,7 @@
 
 .card{
   width: 540px;
-  height: 670;
+  height: 670px; /* Correction: 'height' doit avoir une unité */
   border-radius: 15px;
   border: 1px solid #DFE0E2;
   display: flex;
@@ -45,6 +45,7 @@ button:hover {
 
 .infos{
   display: flex;
+  flex-wrap: wrap; /* Permet aux infos de passer à la ligne */
 }
 
 .infos > .info{
@@ -73,4 +74,92 @@ h2{
   font-weight: 600;
 }
 
+/* Media Queries */
 
+/* Pour les écrans plus petits que 1024px (tablettes) */
+@media (max-width: 1024px) {
+  .card {
+    width: 100%; /* Prend toute la largeur disponible dans la grille */
+    height: auto; /* Hauteur automatique */
+  }
+
+  .card-infos {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .infos > .info {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+
+  button {
+    right: 20px;
+    bottom: 20px; /* Ajuster la position du bouton */
+  }
+}
+
+/* Pour les écrans plus petits que 768px (mobiles) */
+@media (max-width: 768px) {
+  .card-infos {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .infos > .info {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/* Pour les écrans très petits (mobiles) */
+@media (max-width: 480px) {
+  .card-infos {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .infos > .info {
+    font-size: 10px;
+    margin-right: 3px;
+  }
+
+  button {
+    width: 35px;
+    height: 35px;
+  }
+}

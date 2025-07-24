@@ -6,16 +6,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem; /* Ajout d'un padding pour les petits écrans */
 }
 
 .wrapper{
   width: 60%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
 }
 
 .left{
   position: relative;
+  flex-basis: 45%; /* Largeur de base pour l'image */
+  max-width: 45%;
+}
+
+.left img {
+  max-width: 100%; /* Rend l'image fluide */
+  height: auto;
 }
 
 .socials{
@@ -34,6 +43,8 @@
 
 .right{
   width: 45%;
+  flex-basis: 45%; /* Largeur de base pour le texte */
+  max-width: 45%;
 }
 
 .title{
@@ -69,4 +80,73 @@ a{
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
+}
+
+/* Media Queries */
+
+/* Pour les écrans plus petits que 1024px (tablettes) */
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .left, .right {
+    flex-basis: 100%; /* Occuper toute la largeur */
+    max-width: 100%;
+  }
+
+  .left {
+    margin-bottom: 2rem; /* Espacement entre l'image et le texte */
+    text-align: center; /* Centrer l'image */
+  }
+
+  .socials {
+    position: static; /* Supprimer le positionnement absolu */
+    flex-direction: row; /* Afficher les icônes en ligne */
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .socials > img {
+    margin-right: 15px; /* Espacement entre les icônes */
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .description-1, .description-2 {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}
+
+/* Pour les écrans plus petits que 768px (mobiles) */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .description-1, .description-2 {
+    font-size: 13px;
+  }
+}
+
+/* Pour les écrans très petits (mobiles) */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .description-1, .description-2 {
+    font-size: 12px;
+  }
 }

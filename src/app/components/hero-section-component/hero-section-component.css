@@ -47,6 +47,7 @@ p{
 
 .intro{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .left{
@@ -54,8 +55,13 @@ p{
 }
 
 .right{
-  width: 60;
+  width: 60%;
   margin-left: 70px;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
 }
 
 .hero-button{
@@ -76,4 +82,81 @@ p{
 .hero-button:hover{
   color: #131407;
   background-color: transparent;
+}
+
+/* Media Queries */
+
+/* Pour les écrans plus petits que 1024px (tablettes) */
+@media (max-width: 1024px) {
+  .hero-content {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 55px;
+    line-height: 70px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .left, .right {
+    min-width: unset; /* Annule le min-width si défini */
+  }
+
+  .right {
+    margin-left: 30px; /* Réduire la marge sur les tablettes */
+  }
+}
+
+/* Pour les écrans plus petits que 768px (tablettes et mobiles) */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column; /* Empiler les éléments */
+    width: 90%;
+  }
+
+  .intro {
+    flex-direction: column; /* Empiler les éléments */
+  }
+
+  .left, .right {
+    width: 100%; /* Occuper toute la largeur */
+    margin-left: 0;
+    text-align: center; /* Centrer le texte */
+  }
+
+  .right {
+    margin-top: 2rem; /* Espacement entre le texte et l'image */
+  }
+
+  .hero-button {
+    align-self: center; /* Centrer le bouton */
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* Pour les écrans très petits (mobiles) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

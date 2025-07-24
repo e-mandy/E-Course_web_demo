@@ -6,12 +6,48 @@
   font-size: 14px;
   font-family: 'Lexend', sans-serif;
   margin-bottom: 15px;
+  text-align: center; /* Centrer le texte */
 }
 
 .logos{
   display: flex;
+  flex-wrap: wrap; /* Permet aux logos de passer à la ligne */
+  justify-content: center; /* Centrer les logos */
+  gap: 15px; /* Espacement entre les logos */
+  padding: 1rem; /* Ajout d'un padding pour les petits écrans */
 }
 
 .logos > img {
-  margin-right: 15px;
+  margin-right: 0; /* Supprimer la marge fixe */
+  max-width: 100px; /* Limiter la taille des logos */
+  height: auto;
+}
+
+/* Media Queries */
+
+/* Pour les écrans plus petits que 768px (tablettes et mobiles) */
+@media (max-width: 768px) {
+  .text {
+    font-size: 12px;
+  }
+
+  .logos > img {
+    max-width: 80px;
+  }
+}
+
+/* Pour les écrans très petits (mobiles) */
+@media (max-width: 480px) {
+  .text {
+    font-size: 10px;
+  }
+
+  .logos {
+    flex-direction: column; /* Empiler les logos */
+    align-items: center; /* Centrer les logos empilés */
+  }
+
+  .logos > img {
+    max-width: 70px;
+  }
 }

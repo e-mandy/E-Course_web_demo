@@ -8,6 +8,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover; /* Assure que l'image couvre tout le conteneur */
+  background-position: center; /* Centre l'image */
+  padding: 1rem; /* Ajout d'un padding pour les petits écrans */
 }
 
 .wrapper{
@@ -77,4 +80,100 @@ span > svg {
 
 span:hover{
   cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Pour les écrans plus petits que 1024px (tablettes) */
+@media (max-width: 1024px) {
+  .container {
+    height: 500px;
+  }
+
+  .wrapper {
+    width: 70%;
+  }
+
+  .placeholder .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .placeholder button {
+    width: 140px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  span {
+    height: 60px;
+    width: 60px;
+  }
+
+  span > svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Pour les écrans plus petits que 768px (mobiles) */
+@media (max-width: 768px) {
+  .container {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    flex-direction: column; /* Empiler les éléments */
+    width: 90%;
+    text-align: center;
+  }
+
+  .placeholder {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .placeholder .title {
+    font-size: 28px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .placeholder button {
+    align-self: center;
+  }
+
+  span {
+    height: 50px;
+    width: 50px;
+  }
+
+  span > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Pour les écrans très petits (mobiles) */
+@media (max-width: 480px) {
+  .container {
+    height: 300px;
+  }
+
+  .placeholder .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
 }

@@ -9,12 +9,15 @@
 
 .container{
   display: flex;
+  justify-content: center; /* Centre les éléments */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+  padding: 1rem; /* Ajout d'un padding pour les petits écrans */
 }
 
 .counter{
   display: flex;
   flex-direction: column;
-  margin-right: 25px;
+  margin: 25px; /* Marge par défaut pour les grands écrans */
 }
 
 .counter-number{
@@ -34,3 +37,39 @@
   text-align: center;
 }
 
+/* Media Queries */
+
+/* Pour les écrans plus petits que 768px (tablettes et mobiles) */
+@media (max-width: 768px) {
+  .counter {
+    margin: 15px; /* Réduire les marges */
+  }
+
+  .counter-number {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .counter-label {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+/* Pour les écrans très petits (mobiles) */
+@media (max-width: 480px) {
+  .counter {
+    margin: 10px; /* Réduire encore les marges */
+    flex-basis: 100%; /* Chaque compteur prend toute la largeur */
+  }
+
+  .counter-number {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .counter-label {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
