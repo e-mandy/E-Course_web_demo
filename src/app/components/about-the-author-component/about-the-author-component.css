@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left {
+  position: relative;
+  flex-basis: 45%;
+  max-width: 45%;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.socials > img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.right {
+  width: 45%;
+  flex-basis: 45%;
+  max-width: 45%;
+}
+
+.title {
+  font-family: "Lexend", sans-serif;
+  color: #131416;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #131416;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Lexend", sans-serif;
+}
+
+.description-1 {
+  font-family: "Inter", sans-serif;
+  color: #131416;
+  font-weight: 600;
+}
+
+.description-2 {
+  font-family: "Inter", sans-serif;
+  color: #7a7a7a;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #131416;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .left,
+  .right {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .left {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .socials {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .socials > img {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .description-1,
+  .description-2 {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .description-1,
+  .description-2 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .description-1,
+  .description-2 {
+    font-size: 12px;
+  }
+}
