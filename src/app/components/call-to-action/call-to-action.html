@@ -1,0 +1,26 @@
+<div class="plans">
+    <h1 class="text-c p-10" style="font-size: 2.5rem;">Choose the Plans That Fits Your Need</h1>
+    <p class="text-c text-lay">Habitasse dolor facilisi orci, sit cursus sem cursus proin elementum nascetur nisl, <br>vestibulum condimentum morbi mattis.</p>
+
+    <div class="flex gap-40 plansDiv">
+        <div class="round-10 plan" *ngFor="let item of plans">
+            <div class="top" style="background-color:{{item.color}}; color: {{ item.topColor}};">
+                <p style="font-weight: 600; letter-spacing: 2px;">{{item.type}}</p>
+                <p style="margin-top: 20px; line-height: 1.8rem; color: {{item.textColor}};">{{item.text}}</p>
+                <h2 style="font-size: 2.5em; margin-top: 30px;">{{item.price}}</h2>
+            </div>
+            <ul >
+                <li class="flex align-c gap-10" style="color: gray;" *ngFor="let elem of options"><i data-lucide="circle-check"></i> {{elem}}</li>
+            </ul>
+
+            <button class="flex align-c" style="gap:15px; background: {{item.btnBg}}; border:solid 0.2px gray; color: {{item.btnColor}};">
+                Start Learning<i data-lucide="arrow-right" stroke="gray" transform="scale(0.8)"></i>
+            </button>
+            </div>
+    </div>
+</div>
+
+<div class="reviews" style="margin-bottom: 0;">
+    <h1 class="text-c p-10" style="font-size: 2.5rem;"> Student Testimonials</h1>
+    <p class="text-c text-lay">Aliquet sit aenean aliquet venenatis dapibus neque, malesuada quam pretium <br> volutpat pretium, id lacinia sagittis, egestas</p>
+</div>
