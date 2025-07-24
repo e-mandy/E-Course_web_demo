@@ -13,6 +13,8 @@ button{
     border: solid 0.5px transparent;
     transition: 0.5s;
     color: white;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 button:hover{
     border-color: gray;
@@ -31,4 +33,7 @@ li{
 .first{
     padding: 80px;
     border-bottom: solid 0.1px rgba(70, 70, 70, 0.384);
+}
+.second{
+    padding: 50px 80px;
 }
