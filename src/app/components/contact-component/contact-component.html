@@ -4,15 +4,11 @@
             <h1 class="text-4xl font-bold mb-6 md:text-6xl/normal xl:text-7xl">Get in Touch</h1>
             <p class="text-[#7A7A7A] text-[1.2rem] mb-4">Morbi felis massa enim ut vitae egestas purus commodo quis vitae iaculis nullam sit est proin netus amet facilisis.</p>
             <div>
-                <div class="mb-1 md:flex md:items-center md:gap-4">
-                    <span class="mb-3 bg-[#FCD75F] rounded-[50%] flex w-fit h-fit p-3">
-                        <i aria-hidden="true" class="fas fa-map-marker-alt text-xs"></i>
-                    </span>
-                    <div>
-                        <h5 class="font-semibold mb-1">Adress</h5>
-                        <p class="text-[#7A7A7A] text-lg">123 Demo Avenue, New York, NY 10160, United States</p>
-                    </div>
-                </div>
+                <app-adress
+                    *ngFor="let a of address" [adress]="a"
+                    
+                >
+                </app-adress>
                 <div class="mb-1 md:flex md:items-center md:gap-4">
                     <span class="mb-3 bg-[#FCD75F] rounded-[50%] w-fit h-fit p-3 flex">
                         <i aria-hidden="true" class="fas fa-envelope text-xs"></i>
