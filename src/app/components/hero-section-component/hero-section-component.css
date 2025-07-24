@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Lexend', sans-serif;
+  font-size: 70px ;
+  line-height: 100px;
+  color: #131407
+}
+
+p{
+  font-size: 22px;
+  line-height: 26px;
+  color: #7a7a7a;
+  margin-top: 10px;
+
+}
+
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.intro{
+  display: flex;
+}
+
+.left{
+  width: 40%;
+}
+
+.right{
+  width: 60;
+  margin-left: 70px;
+}
+
+.hero-button{
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 200px;
+  background-color: #131407;
+  color: white; 
+  border: 1px solid #131407;
+  border-radius: 50px;
+  margin-top: 50px; 
+  align-self: flex-start;
+}
+
+.hero-button:hover{
+  color: #131407;
+  background-color: transparent;
+}
