@@ -1,6 +1,6 @@
 
 footer{
-    background-color: #131416;
+    background-color: var(--bg-footer);
     width: 100vw;
     color: white;
 }
@@ -37,6 +37,54 @@ li{
 .second{
     padding: 50px 80px;
 }
+.learn{
+    background: var(--bg-learn);
+    text-align: center;
+    padding: 100px;
+    color: gray;
+    font-size: 1.1em;
+}
 .first div{
     width: 20%;
 }
+.learn button{
+    padding: 15px 25px;
+    margin: 10px auto;
+    background-color: var(--bg-footer);
+    transform: scale(0.85);
+}
+@media (max-width:800px) {
+    .first div{
+        width: 50%;
+        padding: 20px;
+    }
+    .first{
+        padding: 20px;
+    }
+}
+
+@media (max-width:550px) {
+    .first div{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .first{
+        padding: 20px;
+    }
+    .first button{
+        display: block;
+        margin: auto;
+    }
+    .second{
+        padding-inline: 40px;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+}
+
