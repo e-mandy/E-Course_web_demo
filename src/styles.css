@@ -75,6 +75,7 @@ button{
     appearance: none;
     outline: none;
     border-radius: none;
+    cursor: pointer;
 }
 .round-10{
     border-radius: 10px;

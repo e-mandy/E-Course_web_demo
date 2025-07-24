@@ -49,4 +49,24 @@ export class CallToAction {
     'Dolor purus tincidunt'
   ]
 
+  reviews=[
+    {
+      text:'“Eget blandit faucibus amet feugiat ante semper mattis quam ornare senectus scelerisque consequat placerat quis a in etiam risus diam viverra mattis tellus.”',
+      name:'LISA HALLWAY',
+      add:'VP of Products',
+      image:'ecourse-template-reviewer-avatar-img-3.jpg',
+    },
+    {
+      text:'“Proin hac integer pellentesque diam ac nibh potenti euismod turpis fermentum diam tortor, odio eleifend orci.”',
+      name:'Luis Alberto',
+      add:'App developer',
+      image:'ecourse-template-reviewer-avatar-img-2.jpg',
+    },
+    {
+      text:'“Fringilla neque tristique feugiat nibh mauris, eget tincidunt senectus ut feugiat nec!”',
+      name:'James Carter',
+      add:'Front-end developer',
+      image:'ecourse-template-reviewer-avatar-img-1.jpg',
+    }
+  ]
 }
