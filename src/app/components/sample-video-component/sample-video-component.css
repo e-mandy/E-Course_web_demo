@@ -17,9 +17,8 @@
 .wrapper {
   width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: stretch;
 }
 
 .placeholder {
@@ -52,7 +51,7 @@
   border-radius: 15px;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: auto;
 }
 
 .placeholder button:hover {
@@ -68,6 +67,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-end;
+  margin-left: 40px;
 }
 
 span svg path {
@@ -120,40 +121,45 @@ span:hover {
   }
 }
 
+@media (max-width: 900px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     height: 400px;
     margin-bottom: 30px;
   }
-
   .wrapper {
-    flex-direction: column; /* Empiler les éléments */
-    width: 90%;
+    flex-direction: column;
+    width: 95%;
     text-align: center;
+    align-items: center;
   }
-
   .placeholder {
     max-width: 100%;
     margin-bottom: 2rem;
+    align-items: center;
   }
-
   .placeholder .title {
     font-size: 28px;
   }
-
   .description {
     width: 100%;
   }
-
   .placeholder button {
     align-self: center;
+    margin-top: 2rem;
   }
-
   span {
     height: 50px;
     width: 50px;
+    align-self: center;
+    margin-left: 0;
+    margin-bottom: 0;
   }
-
   span > svg {
     width: 20px;
     height: 20px;
@@ -164,12 +170,13 @@ span:hover {
   .container {
     height: 300px;
   }
-
   .placeholder .title {
     font-size: 24px;
   }
-
   .description {
     font-size: 12px;
+  }
+  .wrapper {
+    width: 100%;
   }
 }

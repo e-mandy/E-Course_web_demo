@@ -135,27 +135,29 @@ h2 {
 }
 
 @media (max-width: 480px) {
+  .card {
+    min-height: 320px;
+  }
   .card-infos {
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
   }
-
   h2 {
     font-size: 20px;
   }
-
   .description {
     font-size: 12px;
   }
-
   .infos > .info {
     font-size: 10px;
     margin-right: 3px;
   }
-
   button {
     width: 35px;
     height: 35px;
+    right: 10px;
+    bottom: 10px;
+    transform: none;
   }
 }
