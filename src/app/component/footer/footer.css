@@ -1,0 +1,34 @@
+
+footer{
+    background-color: #131416;
+    width: 100vw;
+    color: white;
+}
+button{
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 15px 25px;
+    width: max-content;
+    background: none;
+    border: solid 0.5px transparent;
+    transition: 0.5s;
+    color: white;
+}
+button:hover{
+    border-color: gray;
+}
+input{
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+}
+ul{
+    padding-top: 20px;
+}
+li{
+    padding: 5px 0;
+}
+.first{
+    padding: 80px;
+    border-bottom: solid 0.1px rgba(70, 70, 70, 0.384);
+}
