@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+
+.container{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  position: relative;
+}
+
+.socials{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+   top: 1px;
+  left: 1px;
+}
+
+.socials > img {
+  width: 20px; 
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.right{
+  width: 45%;
+  /* margin-left: 70px; */
+}
+
+.title{
+  font-family: 'Lexend', sans-serif;
+  color: #131416;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2{
+  color: #131416;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Lexend', sans-serif;
+}
+
+.description-1{
+  font-family: 'Inter', sans-serif;
+  color:#131416;
+  font-weight: 600;
+}
+
+.description-2{
+  font-family: 'Inter', sans-serif;
+  color: #7a7a7a;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: #131416;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
