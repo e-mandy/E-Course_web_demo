@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap');
+
+.text{
+  font-weight: bold;
+  word-spacing: 5px;
+  font-size: 14px;
+  font-family: 'Lexend', sans-serif;
+  margin-bottom: 15px;
+}
+
+.logos{
+  display: flex;
+}
+
+.logos > img {
+  margin-right: 15px;
+}
