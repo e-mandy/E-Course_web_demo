@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
 
-.container {
+.fixer{
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("/images/imgi_33_ecourse-template-courses-sample-video-img-bg.jpg");
-  height: 600px;
-  width: 100%;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center;
-  padding: 1rem;
+  margin-top: 30px;
+  height: 600px;
+  width: 100%;
 }
 
 .wrapper {
   width: 50%;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
 
 .placeholder {
@@ -51,7 +51,9 @@
   border-radius: 15px;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  margin-top: auto;
+  margin-top: 30px;
+  color: #131416;
+  cursor: pointer;
 }
 
 .placeholder button:hover {
@@ -67,7 +69,6 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: flex-end;
   margin-left: 40px;
 }
 

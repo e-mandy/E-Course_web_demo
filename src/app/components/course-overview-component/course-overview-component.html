@@ -1,13 +1,15 @@
-<div class="container">
-  <div class="section-head">
-    <div class="section-title">COURSES</div>
-    <h2>What You Will Learn</h2>
-    <p class="description">
-      Tellus nulla lectus faucibus vitae, non sem sollicitudin nunc ipsum volutpat dolor nec facilisis pulvinar mus ut egestas
-      ultrices amet, ridiculus senectus at.
-    </p>
-  </div>
-  <div class="courses">
-    <app-card-component *ngFor="let card of cards" [titre]="card.titre" [description]="card.description" [image]="card.image" [lessonsCount]="card.lessonsCount" [courseDuration]="card.courseDuration" [tasksCount]="card.tasksCount"></app-card-component>
+<div class="fixer">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-title">COURSES</div>
+      <h2>What You Will Learn</h2>
+      <p class="description">
+        Tellus nulla lectus faucibus vitae, non sem sollicitudin nunc ipsum volutpat dolor nec facilisis pulvinar mus ut egestas
+        ultrices amet, ridiculus senectus at.
+      </p>
+    </div>
+    <div class="courses">
+      <app-card-component *ngFor="let card of cards" [titre]="card.titre" [description]="card.description" [image]="card.image" [lessonsCount]="card.lessonsCount" [courseDuration]="card.courseDuration" [tasksCount]="card.tasksCount"></app-card-component>
+    </div>
   </div>
 </div>

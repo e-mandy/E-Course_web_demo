@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
 
+
+.fixer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .courses {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 60%;
+  width: 100%;
 }
 
 .container {
@@ -12,9 +20,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 50px;
   padding: 1rem;
+  width: 60%;
 }
 
 .section-head {
@@ -39,6 +48,7 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 52px;
+  margin: 20px;
 }
 
 .description {
@@ -46,7 +56,8 @@ h2 {
   font-family: "Inter", sans-serif;
   color: #7a7a7a;
   max-width: 590px;
-  margin-bottom: 70px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1024px) {

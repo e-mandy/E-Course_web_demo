@@ -1,11 +1,20 @@
-.container{
+.fixer{
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.container{
+  width: 60%;
   height: 200px;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
-  margin-top: -30px;
 }
+
 
 .metrics{
   display: flex;
@@ -14,5 +23,5 @@
   border-top: 1px solid #131407;
   border-bottom: 1px solid #131407;
   height: 170px;
-  width: 60%;
+  width: 100%;
 }

@@ -9,6 +9,13 @@
   padding: 1rem;
 }
 
+.fixer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   width: 60%;
   display: flex;

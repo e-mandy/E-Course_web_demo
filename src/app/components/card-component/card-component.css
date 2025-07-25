@@ -20,14 +20,12 @@
 }
 
 .card-infos {
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
+  padding: 30px;
 }
 
 button {
   position: absolute;
-  border-radius: 22px;
+  border-radius: 50%;
   background-color: #fcd75f;
   padding: 20px, 22px;
   right: 30px;
@@ -38,6 +36,7 @@ button {
   height: 50px;
   box-shadow: 0 0 10px rgba(252, 215, 95, 0.7);
   transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 button:hover {
@@ -46,20 +45,28 @@ button:hover {
 
 .infos {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.infos > .info {
+.info {
   margin-right: 12px;
   color: #7a7a7a;
   font-size: 14px;
   font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info svg{
+  margin-right: 5px;
 }
 
 .description {
   font-size: 16px;
   color: #7a7a7a;
   font-family: "Inter", sans-serif;
+  margin-top: 20px;
 }
 
 img {
