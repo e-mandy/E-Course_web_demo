@@ -1,3 +1,6 @@
+import { Content1 } from "./components/about/header/content1/content1";
+import { ContentBody1 } from './components/about/body/content-body1/content-body1';
+import { ContentBody2 } from './components/about/body/content-body2/content-body2';
 import { Component, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Footer } from './components/footer/footer';
@@ -17,6 +20,7 @@ import { HomeComponent } from './components/home-component/home-component';
 })
 
 export class App {
+  
   protected title = 'e-course_web_demo';
 
   ngAfterViewInit(){
