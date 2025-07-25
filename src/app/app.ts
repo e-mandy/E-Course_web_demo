@@ -7,10 +7,11 @@ import { CallToAction } from './components/call-to-action/call-to-action';
 import { CommonModule } from '@angular/common';
 import { Navbar } from './components/navbar/navbar';
 import { LessonCard } from './components/lesson-card/lesson-card';
+import { HomeComponent } from './components/home-component/home-component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Footer, Highlights, CallToAction,Navbar, LessonCard],
+  imports: [RouterOutlet, Navbar, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

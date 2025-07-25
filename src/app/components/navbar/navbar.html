@@ -1,16 +1,16 @@
-<nav>
-    <div class="py-8 px-5 bg-red-50 lg:px-32">
+<nav class="bg-transparent absolute top-0 left-0 w-full">
+    <div class="py-8 px-5 lg:px-32">
         <div class="flex justify-between items-center relative">
             <div class="lg:flex lg:items-center gap-10">
                 <div>
                     <img class="" src="logo.svg" alt="">
                 </div>
-                <div [class.hidden]="!isOpenMenu" class="w-screen bg-white absolute top-[56px] left-[-20px] lg:block lg:static lg:bg-inherit lg:w-fit">
+                <div [class.hidden]="!isOpenMenu" class="w-screen bg-white absolute top-[64px] left-[-20px] lg:block lg:static lg:bg-inherit lg:w-fit">
                     <ul class="lg:flex items-center gap-5">
-                        <li class="py-3 pl-6 font-semibold"><a>Home</a></li>
-                        <li class="py-3 pl-6 font-semibold"><a>Lessons</a></li>
-                        <li class="py-3 pl-6 font-semibold"><a>About</a></li>
-                        <li class="py-3 pl-6 font-semibold"><a>Contact</a></li>
+                        <li class="py-3 pl-6 font-semibold cursor-pointer"><a routerLink="">Home</a></li>
+                        <li class="py-3 pl-6 font-semibold"><a routerLink="/lessons">Lessons</a></li>
+                        <li class="py-3 pl-6 font-semibold"><a routerLink="/about">About</a></li>
+                        <li class="py-3 pl-6 font-semibold"><a routerLink="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { planItem } from '../../interfaces/planItem';
 
 @Component({
   selector: 'app-call-to-action',
@@ -8,7 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './call-to-action.css'
 })
 export class CallToAction {
-  plans=[
+  @Input() Item!: planItem
+  
+  plans: planItem[] = 
+  [    
     {
       type:'STARTER',
       text:'Nunc arcu et eget tellus nunc quis gravida est ullamcorper orci scelerisque.',
