@@ -6,7 +6,7 @@ import { planItem } from '../../interfaces/planItem';
   selector: 'app-call-to-action',
   imports: [CommonModule],
   templateUrl: './call-to-action.html',
-  styleUrl: './call-to-action.css'
+  styleUrls: ['./call-to-action.css', '../../style.css']
 })
 export class CallToAction {
   @Input() Item!: planItem
@@ -52,5 +52,30 @@ export class CallToAction {
     'Pretium nibh lobortis egestas',
     'Dolor purus tincidunt'
   ]
+
+  reviews=[
+    {
+      text:'“Eget blandit faucibus amet feugiat ante semper mattis quam ornare senectus scelerisque consequat placerat quis a in etiam risus diam viverra mattis tellus.”',
+      name:'LISA HALLWAY',
+      add:'VP of Products',
+      image:'ecourse-template-reviewer-avatar-img-3.jpg',
+    },
+    {
+      text:'“Proin hac integer pellentesque diam ac nibh potenti euismod turpis fermentum diam tortor, odio eleifend orci.”',
+      name:'Luis Alberto',
+      add:'App developer',
+      image:'ecourse-template-reviewer-avatar-img-2.jpg',
+    },
+    {
+      text:'“Fringilla neque tristique feugiat nibh mauris, eget tincidunt senectus ut feugiat nec!”',
+      name:'James Carter',
+      add:'Front-end developer',
+      image:'ecourse-template-reviewer-avatar-img-1.jpg',
+    }
+  ]
+
+  onCallToActionClick(){
+    window.scrollTo({top:0, behavior:'smooth'})
+ }
 
 }
