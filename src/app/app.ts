@@ -11,7 +11,7 @@ import { HomeComponent } from './components/home-component/home-component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Navbar, Footer],
+  imports: [RouterOutlet, Navbar, Footer,LessonCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
