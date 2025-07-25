@@ -20,6 +20,6 @@ import { Highlights } from '../highlights/highlights';
     CallToAction
   ],
   templateUrl: './home-component.html',
-  styleUrl: './home-component.css',
+  styleUrls: ['./home-component.css'],
 })
 export class HomeComponent {}
