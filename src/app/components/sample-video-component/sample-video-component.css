@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
+
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("/images/imgi_33_ecourse-template-courses-sample-video-img-bg.jpg");
+  height: 600px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+
+.wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 500px;
+}
+
+.placeholder .title {
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #dfe0e2;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 16px;
+  color: #dfe0e2;
+  font-family: "Inter", sans-serif;
+  width: 80%;
+}
+
+.placeholder button {
+  background-color: white;
+  border: none;
+  width: 155px;
+  height: 45px;
+  border-radius: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.placeholder button:hover {
+  background-color: #fcd75f;
+}
+
+span {
+  font-size: 16px;
+  border: 1px solid #fcd75f;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin-left: 40px;
+}
+
+span svg path {
+  fill: #fcd75f;
+}
+
+span > svg {
+  width: 30px;
+  height: 30px;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: 500px;
+  }
+
+  .wrapper {
+    width: 70%;
+  }
+
+  .placeholder .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .placeholder button {
+    width: 140px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  span {
+    height: 60px;
+    width: 60px;
+  }
+
+  span > svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  .wrapper {
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+    align-items: center;
+  }
+  .placeholder {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+  .placeholder .title {
+    font-size: 28px;
+  }
+  .description {
+    width: 100%;
+  }
+  .placeholder button {
+    align-self: center;
+    margin-top: 2rem;
+  }
+  span {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  span > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 300px;
+  }
+  .placeholder .title {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
