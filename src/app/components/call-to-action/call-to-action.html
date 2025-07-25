@@ -13,7 +13,7 @@
                 <li class="flex align-c gap-10" [ngStyle]="{'color': 'gray'}" *ngFor="let elem of options"><i data-lucide="circle-check"></i> {{elem}}</li>
             </ul>
 
-            <button class="flex align-c" [ngStyle]="{'gap':'15px', 'background': item.btnBg, 'border':'solid 0.2px gray', 'color': item.btnColor}">
+            <button (click)="onCallToActionClick()" class="flex align-c" [ngStyle]="{'gap':'15px', 'background': item.btnBg, 'border':'solid 0.2px gray', 'color': item.btnColor}">
                 Start Learning<i data-lucide="arrow-right" stroke="gray" transform="scale(0.8)"></i>
             </button>
             </div>
@@ -23,4 +23,27 @@
 <div class="reviews" [ngStyle]="{'margin-bottom': '0'}">
     <h1 class="text-c p-10" [ngStyle]="{'font-size': '2.5rem'}"> Student Testimonials</h1>
     <p class="text-c text-lay">Aliquet sit aenean aliquet venenatis dapibus neque, malesuada quam pretium <br> volutpat pretium, id lacinia sagittis, egestas</p>
+
+    <div class="flex gap-40 elems just-c">
+        <div class="review" *ngFor="let item of reviews">
+            <div class="flex " style="margin-bottom:20px;">
+                <i data-lucide="star" fill="var(--bg-learn)" stroke="white"></i>
+                <i data-lucide="star" fill="var(--bg-learn)" stroke="white"></i>
+                <i data-lucide="star" fill="var(--bg-learn)" stroke="white"></i>
+                <i data-lucide="star" fill="var(--bg-learn)" stroke="white"></i>
+                <i data-lucide="star" fill="var(--bg-learn)" stroke="white"></i>
+                <i data-lucide="star" fill="var(--bg-learn)" stroke="white"></i>                
+            </div>
+
+            <strong>{{item.text}}</strong>
+            
+            <div class="flex gap-25 align-c" style="margin: 20px 0;">
+                <img src="assets/images/{{item.image}}" alt="">
+                <div>
+                    <p style="letter-spacing: 2px; padding-bottom: 5px;">{{item.name}}</p>
+                    <p style="color: gray;">{{ item.add }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

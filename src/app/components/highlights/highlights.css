@@ -59,4 +59,10 @@ img{
         align-items: center;
         margin-top: 30px;
     }
+    .high{
+        display: block;
+    }
+    .high div{
+        margin: 20px auto;
+    }
 }

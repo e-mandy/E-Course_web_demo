@@ -5,7 +5,7 @@ import {icons, createIcons} from 'lucide';
   selector: 'app-highlights',
   imports: [CommonModule],
   templateUrl: './highlights.html',
-  styleUrl: './highlights.css',
+  styleUrls:['./highlights.css', '../../style.css']
 })
 
 
@@ -30,5 +30,9 @@ export class Highlights {
    
    ngAfterViewInit(){
     createIcons({icons});
+   }
+
+   onHighlightClick(){
+      window.scrollTo({top:0, behavior:'smooth'})
    }
 }
