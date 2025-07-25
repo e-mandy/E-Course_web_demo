@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './footer.html',
-  styleUrl: './footer.css'
+  styleUrls: ['./footer.css', '../../style.css']
 })
 export class Footer {
-   
+  onFooterBtnClick(){
+    window.scrollTo({top:0, behavior:'smooth'})
+ }
 }

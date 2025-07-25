@@ -2,7 +2,7 @@
     <div class="learn">
         <h2 class="p-10 m-10">Start Learning Today!</h2>
         <p style="line-height: 1.8rem;">Purus sodales commodo et sit mauris est facilisis molestie eget ut <br> turpis nisi vestibulum morbi vivamus.</p>
-        <button>Start Learning Now</button>
+        <button (click)="onFooterBtnClick()">Start Learning Now</button>
     </div>
 
     <div class="flex w-100 first bet flex-wrap">
@@ -14,35 +14,35 @@
             <div>
                 <h2>Learn</h2>
                 <ul>
-                    <li><a href="">Introduction</a></li>
-                    <li><a href="">Working</a></li>
-                    <li><a href="">Validating</a></li>
-                    <li><a href="">Testing</a></li>
+                    <li (click)="onFooterBtnClick()"><a href="">Introduction</a></li>
+                    <li (click)="onFooterBtnClick()"><a href="">Working</a></li>
+                    <li (click)="onFooterBtnClick()"><a href="">Validating</a></li>
+                    <li (click)="onFooterBtnClick()"><a href="">Testing</a></li>
                 </ul>
             </div>
     
         <div>
             <h2>About</h2>
             <ul>
-                <li>About me</li>
-                <li>Certificate</li>
-                <li>Testimonials</li>
-                <li>Get in touch</li>
+                <li (click)="onFooterBtnClick()">About me</li>
+                <li (click)="onFooterBtnClick()">Certificate</li>
+                <li (click)="onFooterBtnClick()">Testimonials</li>
+                <li (click)="onFooterBtnClick()">Get in touch</li>
             </ul>
         </div>
 
         <div class="flex flex-column gap-25">
              <h2>Newsletter</h2>
             <input type="email" placeholder="Email address">
-            <button>Subscribe</button>
+            <button (click)="onFooterBtnClick()">Subscribe</button>
         </div>
     </div>
     
 
     <div class="second flex bet">
         <div class="flex" style="gap:30px; align-items: last baseline;">
-            <a href="">Privacy</a>
-            <a href="">Terms</a>
+            <a (click)="onFooterBtnClick()" href="">Privacy</a>
+            <a (click)="onFooterBtnClick()" href="">Terms</a>
         </div>
         <div class="flex bet" style="gap: 20px;">
            <i data-lucide="twitter" fill="white" stroke-width="1"></i>

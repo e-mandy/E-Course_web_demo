@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-call-to-action',
   imports: [CommonModule],
   templateUrl: './call-to-action.html',
-  styleUrl: './call-to-action.css'
+  styleUrls: ['./call-to-action.css', '../../style.css']
 })
 export class CallToAction {
   plans=[
@@ -69,4 +69,9 @@ export class CallToAction {
       image:'ecourse-template-reviewer-avatar-img-1.jpg',
     }
   ]
+
+  onCallToActionClick(){
+    window.scrollTo({top:0, behavior:'smooth'})
+ }
+
 }
