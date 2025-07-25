@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap");
 
+.fixer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .courses {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 60%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .container {
@@ -12,9 +21,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 50px;
   padding: 1rem;
+  width: 60%;
 }
 
 .section-head {
@@ -39,6 +49,7 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 52px;
+  margin: 20px;
 }
 
 .description {
@@ -46,17 +57,20 @@ h2 {
   font-family: "Inter", sans-serif;
   color: #7a7a7a;
   max-width: 590px;
-  margin-bottom: 70px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1024px) {
   .courses {
-    width: 80%;
+    width: 90%;
     gap: 15px;
+    justify-items: center;
   }
 
   .container {
-    margin-top: 100px;
+    width: 80%;
+    margin-top: 80px;
   }
 
   h2 {
@@ -67,44 +81,69 @@ h2 {
   .description {
     font-size: 14px;
     max-width: 450px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .courses {
-    grid-template-columns: 1fr; /* Une seule colonne */
-    width: 90%;
+    grid-template-columns: 1fr;
+    width: 95%;
+    gap: 20px;
+    justify-items: center;
   }
 
   .container {
-    margin-top: 80px;
+    width: 90%;
+    margin-top: 60px;
   }
 
   h2 {
     font-size: 28px;
     line-height: 36px;
+    margin: 15px 0;
   }
 
   .description {
     font-size: 13px;
-    max-width: 90%;
-    margin-bottom: 40px;
+    max-width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
+  .courses {
+    width: 100%;
+    gap: 15px;
+  }
+
   .container {
-    margin-top: 60px;
+    width: 95%;
+    margin-top: 40px;
+    padding: 0.5rem;
   }
 
   h2 {
     font-size: 24px;
     line-height: 32px;
+    margin: 10px 0;
   }
 
   .description {
     font-size: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 11px;
+  }
+
+  .section-head {
+    padding: 0;
   }
 }

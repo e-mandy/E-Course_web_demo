@@ -1,18 +1,93 @@
-.container{
+.fixer {
   width: 100%;
-  height: 200px;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-top: -30px;
+  align-items: center;
+  margin-top: -90px;
 }
 
-.metrics{
+.container {
+  width: 60%;
+  height: auto;
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  padding: 1rem 0;
+}
+
+.metrics {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #131407;
   border-bottom: 1px solid #131407;
-  height: 170px;
-  width: 60%;
+  height: auto;
+  min-height: 150px;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+@media (max-width: 1024px) {
+  .fixer {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 80%;
+    min-height: 140px;
+    margin: 20px 0;
+    padding: 0.75rem 0;
+  }
+
+  .metrics {
+    min-height: 120px;
+    padding: 15px 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .fixer {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 90%;
+    min-height: 180px;
+    margin: 15px 0;
+    padding: 1rem 0;
+  }
+
+  .metrics {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 20px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixer {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 95%;
+    min-height: 160px;
+    margin: 10px 0;
+    padding: 0.5rem 0;
+  }
+
+  .metrics {
+    gap: 20px;
+    padding: 20px 15px;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+  }
 }
