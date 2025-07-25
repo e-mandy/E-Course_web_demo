@@ -1,48 +1,48 @@
-<div class="bg-[#FEFAED] pt-24 md:pt-48">
-    <div class="px-6 flex flex-col h-fit md:flex-row gap-8 md:w-[85%] md:mx-auto">
-        <div class="md:w-1/2 md:pr-20 md:h-full">
-            <h1 class="text-4xl font-bold mb-6 md:text-6xl/normal xl:text-7xl">Get in Touch</h1>
-            <p class="text-[#7A7A7A] text-[1.2rem] mb-4">Morbi felis massa enim ut vitae egestas purus commodo quis vitae iaculis nullam sit est proin netus amet facilisis.</p>
+<div class="contact-bg contact-pt">
+    <div class="contact-container">
+        <div class="contact-left">
+            <h1 class="contact-title">Get in Touch</h1>
+            <p class="contact-desc">Morbi felis massa enim ut vitae egestas purus commodo quis vitae iaculis nullam sit est proin netus amet facilisis.</p>
             <div>
                 <app-adress-component
                     *ngFor="let a of adresses" [adress]="a"
                 >
                 </app-adress-component>
-                <hr class="mx-auto lg:my-8">
+                <hr class="contact-hr">
                 <div>
-                    <h5 class="uppercase tracking-widest font-bold lg:mb-4">Social Media</h5>
-                    <div class="flex gap-8">
+                    <h5 class="contact-social-title">Social Media</h5>
+                    <div class="contact-social-list">
                         <span>
-                            <a href=""><i class="fab fa-medium text-xl lg:text-3xl"></i></a>
+                            <a href=""><i class="fab fa-medium contact-social-icon"></i></a>
                         </span>
                         <span>
-                            <a href=""><i class="fab fa-twitter text-xl lg:text-3xl"></i></a>
+                            <a href=""><i class="fab fa-twitter contact-social-icon"></i></a>
                         </span>
                         <span>
-                            <a href=""><i class="fab fa-facebook text-xl lg:text-3xl"></i></a>
+                            <a href=""><i class="fab fa-facebook contact-social-icon"></i></a>
                         </span>
                         <span>
-                            <a href=""><i class="fab fa-linkedin text-xl lg:text-3xl"></i></a>
+                            <a href=""><i class="fab fa-linkedin contact-social-icon"></i></a>
                         </span>
                     </div>
                 </div>
             </div>
         </div>
-        <form class="bg-white pt-5 lg:pt-10 lg:px-10 px-6 pb-10 border border-[#dcdbdb] rounded-lg mb-12 md:w-1/2">
-            <h1 class="text-2xl md:text-3xl font-bold mb-4 lg:text-4xl">Send a Message</h1>
-            <div class="flex flex-col mb-4">
-                <label for="name">Name<span class="text-red-500">*</span></label>
-                <input type="text" id="name" class="p-4 bg-[#FAFAFA] border-[#dcdbdb] border outline-black">
+        <form class="contact-form">
+            <h1 class="contact-form-title">Send a Message</h1>
+            <div class="contact-form-group">
+                <label for="name">Name<span class="contact-required">*</span></label>
+                <input type="text" id="name" class="contact-input">
             </div>
-            <div class="flex flex-col mb-4">
-                <label for="email">Email<span class="text-red-500">*</span></label>
-                <input type="email" id="email" class="p-4 bg-[#FAFAFA] border-[#dcdbdb] border outline-black">
+            <div class="contact-form-group">
+                <label for="email">Email<span class="contact-required">*</span></label>
+                <input type="email" id="email" class="contact-input">
             </div>
-            <div class="flex flex-col mb-4">
-                <label for="comment">Comment or Message<span class="text-red-500">*</span></label>
-                <textarea name="comment" id="comment" class="p-4 bg-[#FAFAFA] border-[#dcdbdb] border outline-black"></textarea>
+            <div class="contact-form-group">
+                <label for="comment">Comment or Message<span class="contact-required">*</span></label>
+                <textarea name="comment" id="comment" class="contact-input"></textarea>
             </div>
-            <button class="bg-black px-6 font-semibold my-2 py-3 text-white rounded-4xl">Submit</button>
+            <button class="contact-submit">Submit</button>
         </form>
     </div>
     <div>
