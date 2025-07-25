@@ -9,10 +9,12 @@ import { CommonModule } from '@angular/common';
 import { Navbar } from './components/navbar/navbar';
 import { LessonCard } from './components/lesson-card/lesson-card';
 import { HomeComponent } from './components/home-component/home-component';
+import { LessonPage } from "./components/lesson-page/lesson-page";
+import { Qualities } from "./components/qualities/qualities";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HomeComponent, Navbar, Footer],
+  imports: [RouterOutlet, HomeComponent, Navbar, Footer, LessonPage, Qualities],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,0 +1,7 @@
+<div class="flex w-11/12 mx-auto border-b-[1px] my-25 border-black gap-5">
+    <div *ngFor="let quality of qualities" class="mb-15 p-5 gap-4 flex w-4/12 flex-col ">
+        <img class="w-7 h-7" src="{{ quality.logo }}" alt="">
+        <h2 class="text-xl font-semibold">{{ quality.title }}</h2>
+        <p class="text-semibold text-black/50">{{ quality.description }}</p>
+    </div>
+</div>
