@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .counter {
@@ -36,35 +36,72 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .container {
+    justify-content: space-around;
+    gap: 10px;
+    padding: 0.25rem;
+  }
+
   .counter {
-    margin: 15px;
+    margin: 8px 15px;
+    min-width: 90px;
+    text-align: center;
   }
 
   .counter-number {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 35px;
   }
 
   .counter-label {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+    gap: 20px;
+    padding: 0.5rem;
+  }
+
+  .counter {
+    margin: 10px 20px;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .counter-number {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .counter-label {
+    font-size: 13px;
+    line-height: 18px;
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    gap: 15px;
+    padding: 0.25rem;
+  }
+
   .counter {
-    margin: 10px;
-    flex-basis: 100%;
+    margin: 8px 15px;
+    min-width: 80px;
   }
 
   .counter-number {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 28px;
+    line-height: 28px;
   }
 
   .counter-label {
-    font-size: 10px;
-    line-height: 18px;
+    font-size: 11px;
+    line-height: 16px;
   }
 }

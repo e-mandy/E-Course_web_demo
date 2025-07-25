@@ -10,7 +10,8 @@
 }
 
 .card {
-  width: 540px;
+  width: 100%;
+  max-width: 540px;
   height: 670px;
   border-radius: 15px;
   border: 1px solid #dfe0e2;
@@ -58,7 +59,7 @@ button:hover {
   align-items: center;
 }
 
-.info svg{
+.info svg {
   margin-right: 5px;
 }
 
@@ -84,53 +85,79 @@ h2 {
 
 @media (max-width: 1024px) {
   .card {
-    width: 100%; /* Prend toute la largeur disponible dans la grille */
-    height: auto; /* Hauteur automatique */
+    width: 100%;
+    height: auto;
   }
 
   .card-infos {
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 30px;
+    padding: 25px;
   }
 
   h2 {
     font-size: 28px;
+    margin-bottom: 8px;
   }
 
   .description {
     font-size: 14px;
+    line-height: 20px;
+  }
+
+  .infos {
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .infos > .info {
     font-size: 12px;
-    margin-right: 8px;
+    margin-right: 6px;
+    white-space: nowrap;
+  }
+
+  .info svg {
+    width: 10px;
+    height: 10px;
   }
 
   button {
     right: 20px;
-    bottom: 20px; /* Ajuster la position du bouton */
+    bottom: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .card-infos {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
   }
 
   h2 {
     font-size: 24px;
+    margin-bottom: 8px;
   }
 
   .description {
     font-size: 13px;
+    line-height: 18px;
+  }
+
+  .infos {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
   }
 
   .infos > .info {
     font-size: 11px;
-    margin-right: 5px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .info svg {
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
   }
 
   button {
@@ -145,21 +172,43 @@ h2 {
   .card {
     min-height: 320px;
   }
+
   .card-infos {
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
   }
+
   h2 {
     font-size: 20px;
+    margin-bottom: 6px;
   }
+
   .description {
     font-size: 12px;
+    line-height: 16px;
   }
+
+  .infos {
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 6px;
+    align-items: flex-start;
+  }
+
   .infos > .info {
     font-size: 10px;
-    margin-right: 3px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
+
+  .info svg {
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    flex-shrink: 0;
+  }
+
   button {
     width: 35px;
     height: 35px;

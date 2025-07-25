@@ -85,7 +85,7 @@ p {
 
 @media (max-width: 1024px) {
   .hero-content {
-    width: 80%;
+    width: 75%;
   }
 
   h1 {
@@ -95,43 +95,50 @@ p {
 
   p {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 24px;
+    margin-top: 15px;
   }
 
   .left,
   .right {
-    min-width: unset; /* Annule le min-width si défini */
+    min-width: unset;
   }
 
   .right {
-    margin-left: 30px; /* Réduire la marge sur les tablettes */
+    margin-left: 40px;
+  }
+
+  .hero-button {
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-content {
-    flex-direction: column; /* Empiler les éléments */
     width: 90%;
   }
 
   .intro {
-    flex-direction: column; /* Empiler les éléments */
+    flex-direction: column;
   }
 
   .left,
   .right {
-    width: 100%; /* Occuper toute la largeur */
+    width: 100%;
     margin-left: 0;
-    text-align: center; /* Centrer le texte */
+    text-align: center;
   }
 
   .right {
-    margin-top: 2rem; /* Espacement entre le texte et l'image */
+    margin-top: 30px;
   }
 
   .hero-button {
-    align-self: center; /* Centrer le bouton */
-    margin-top: 2rem;
+    align-self: center;
+    margin-top: 30px;
+    width: 180px;
+    height: 42px;
+    font-size: 13px;
   }
 
   h1 {
@@ -141,18 +148,45 @@ p {
 
   p {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+
+  .hero-container {
+    min-height: 80vh;
+    padding: 20px 0;
   }
 }
 
 @media (max-width: 480px) {
+  .hero-content {
+    width: 95%;
+  }
+
   h1 {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 32px;
+    line-height: 42px;
   }
 
   p {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .hero-button {
+    width: 160px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+
+  .right {
+    margin-top: 25px;
+  }
+
+  .hero-container {
+    min-height: 70vh;
+    padding: 15px 0;
   }
 }
