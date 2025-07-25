@@ -1,16 +1,17 @@
-<nav>
-    <div class="navbar-root">
-        <div class="navbar-flex">
-            <div class="navbar-links-container">
-                <div class="navbar-logo">
-                    <img src="logo.svg" alt="">
+
+<nav class="bg-transparent absolute top-0 left-0 w-full">
+    <div class="py-8 px-5 lg:px-32">
+        <div class="flex justify-between items-center relative">
+            <div class="lg:flex lg:items-center gap-10">
+                <div>
+                    <img class="" src="logo.svg" alt="">
                 </div>
-                <div [class.hidden]="isOpenMenu" class="navbar-menu">
-                    <ul class="navbar-list">
-                        <li><a>Home</a></li>
-                        <li><a>Lessons</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Contact</a></li>
+                <div [class.hidden]="!isOpenMenu" class="w-screen bg-white absolute top-[64px] left-[-20px] lg:block lg:static lg:bg-inherit lg:w-fit">
+                    <ul class="lg:flex items-center gap-5">
+                        <li class="py-3 pl-6 font-semibold cursor-pointer"><a routerLink="">Home</a></li>
+                        <li class="py-3 pl-6 font-semibold"><a routerLink="/lessons">Lessons</a></li>
+                        <li class="py-3 pl-6 font-semibold"><a routerLink="/about">About</a></li>
+                        <li class="py-3 pl-6 font-semibold"><a routerLink="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
