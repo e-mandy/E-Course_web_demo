@@ -13,23 +13,34 @@
   </div>
   <div class="w-[100%] max-w-4xl object-cover aspect-video relative" id="video">
   <ng-container *ngIf="!videoPlaying">
-    <img src="assets/images/ecourse-template-beginner-friendly-img.jpg" alt="video" class="rounded-xl w-[100%] max-w-4xl object-cover aspect-video">
-    <button type="button"
-      class="absolute flex items-center justify-center w-20 h-20 bg-white bg-opacity-80 rounded-full shadow-lg hover:bg-opacity-100 transition top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-      (click)="playVideo()">
-      <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-        <polygon points="9.5,7.5 16.5,12 9.5,16.5" />
-      </svg>
-    </button>
+    <div
+      class="elementor-custom-embed-image-overlay relative rounded-xl w-full max-w-4xl aspect-video bg-cover bg-center cursor-pointer"
+      style="background-image: url('https://websitedemos.net/teach-ecourse-04/wp-content/uploads/sites/924/2021/08/ecourse-template-about-video-thumb-img.jpg');"
+      (click)="playVideo()"
+      tabindex="0"
+      role="button"
+      aria-label="Play Video"
+    >
+      <div
+        class="elementor-custom-embed-play absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-20 h-20 bg-white bg-opacity-80 rounded-full shadow-lg hover:bg-opacity-100 transition"
+      >
+        <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+          <polygon points="9.5,7.5 16.5,12 9.5,16.5" />
+        </svg>
+      </div>
+    </div>
   </ng-container>
   <ng-container *ngIf="videoPlaying">
-    <video #videoPlayer
-      class="rounded-xl w-[100%] max-w-4xl object-cover aspect-video"
-      src="assets/videos/Naruto-Shippuden op 12 lyric(360P).mp4"
-      autoplay
-      controls
-      (ended)="videoPlaying = false">
-    </video>
+    <iframe
+      class="rounded-xl w-[100vw] max-w-4xl h-[60vw] max-h-[600px] object-cover aspect-video"
+      width="960"
+      height="540"
+      src="https://www.youtube.com/embed/XHOmBV4js_E?autoplay=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
   </ng-container>
 </div>
 

@@ -16,7 +16,8 @@
       <div class="space-y-6">
         <ng-container *ngFor="let exp of experiences; let last = last">
           <div class="flex items-start gap-4">
-            <img [src]="exp.img" alt="experience" class="h-10 w-10 object-contain mt-1" />
+            <span *ngIf="exp.svg" class="h-10 w-10 block" [innerHTML]="exp.svg"></span>
+            <img *ngIf="exp.img" [src]="exp.img" alt="experience" class="h-10 w-10 object-contain mt-1" />
             <div class="flex-1">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-base">{{ exp.period }}</span>
